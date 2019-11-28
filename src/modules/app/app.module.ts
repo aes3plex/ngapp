@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './components/app.component';
+import { AppComponent } from './components/app/app.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, LayoutComponent],
     imports: [BrowserModule],
     providers: [],
     bootstrap: [AppComponent],
