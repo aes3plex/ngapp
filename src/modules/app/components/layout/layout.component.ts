@@ -19,16 +19,16 @@ import { Component } from '@angular/core';
 
             .grid {
                 display: grid;
-                grid-template-columns: 1fr 4fr;
+                grid-template-columns: 1fr 5fr;
                 height: 100%;
             }
 
             .menu {
-                background-color: rgb(45, 158, 144);
+                background: #ffffff;
             }
 
             .content {
-                background-color: rgba(34, 134, 120, 0.73);
+                background: linear-gradient(180deg, #f3f3fb 0%, #fdfbfd 100%);
             }
         `,
     ],
