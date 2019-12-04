@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 html {
     font-size: 62.5%;
     height: 100%;
@@ -12,4 +13,9 @@ body {
 
 * {
     box-sizing: border-box;
+    --color-key-f: #ffffff;
+    --color-active: #2A8BF2;
+    --color-base-grey: #707C97;
+
+    --color-indicator-shadow: 42, 139, 242;
 }
