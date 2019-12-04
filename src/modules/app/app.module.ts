@@ -2,12 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './components/app/app.component';
 import { LayoutComponent } from './components/layout/layout.component';
-import { IconsModule } from '../icons/icons.module';
-import { ControlsModule } from '../controls/controls.module';
+import { SidebarModule } from '../sidebar/sidebar.module';
 
 @NgModule({
     declarations: [AppComponent, LayoutComponent],
-    imports: [BrowserModule, IconsModule, ControlsModule],
+    imports: [
+        BrowserModule,
+        SidebarModule,
+        // StoreModule.forRoot(appReducer),
+    ],
     providers: [],
     bootstrap: [AppComponent],
 })

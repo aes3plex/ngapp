@@ -8,8 +8,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
             [class.active]="active"
             (click)="handleClick()"
         >
-            <div class="active-indicator"></div>
-            <ng-content></ng-content>
+            <div class="indicator"></div>
+            <div class="content"><ng-content></ng-content></div>
         </div>
     `,
     styles: [
@@ -32,21 +32,28 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
                 color: var(--color-active);
             }
 
-            .active-indicator {
+            .indicator {
                 width: 0.3rem;
                 height: 100%;
-                background-color: var(--color-active);
                 border-radius: 0.3rem;
-                box-shadow: 0.4rem 0rem 2.5rem rgba(var(--color-indicator-shadow), 0.75),
-                0rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.55),
-                0.1rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.45);
+            }
+
+            .active .indicator {
+                background-color: var(--color-active);
+                box-shadow: 0.4rem 0rem 2.5rem
+                        rgba(var(--color-indicator-shadow), 0.75),
+                    0rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.55),
+                    0.1rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.45);
+            }
+
+            .active .content {
+                color: var(--color-active);
             }
         `,
     ],
 })
 export class MenuButtonComponent {
     @Input() public active: boolean;
-    @Input() public height: number;
 
     @Output() public onselect: EventEmitter<void> = new EventEmitter();
 
