@@ -7,10 +7,9 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
             class="menu-button"
             [class.active]="active"
             (click)="handleClick()"
-            [style.height.rem]="height"
         >
             <div class="active-indicator"></div>
-            <div class="content"><ng-content></ng-content></div>
+            <ng-content></ng-content>
         </div>
     `,
     styles: [
@@ -19,7 +18,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
                 display: grid;
                 align-items: center;
                 grid-template-columns: auto 1fr;
-                background-color: var(--color-key-f);
+                background-color: var(--color-white);
+                height: inherit;
                 padding: inherit;
                 cursor: pointer;
                 font-weight: 600;
@@ -37,18 +37,9 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
                 height: 100%;
                 background-color: var(--color-active);
                 border-radius: 0.3rem;
-                box-shadow: 0.4rem 0rem 2.5rem
-                        rgba(var(--color-indicator-shadow), 0.75),
-                    0rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.55),
-                    0.1rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.45);
-            }
-
-            .content {
-                display: grid;
-                grid-auto-flow: column;
-                align-items: center;
-                grid-gap: 1.7rem;
-                padding-left: 3.8rem;
+                box-shadow: 0.4rem 0rem 2.5rem rgba(var(--color-indicator-shadow), 0.75),
+                0rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.55),
+                0.1rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.45);
             }
         `,
     ],
