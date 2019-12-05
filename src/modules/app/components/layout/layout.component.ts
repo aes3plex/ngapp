@@ -24,7 +24,11 @@ import { Component } from '@angular/core';
             }
 
             .content {
-                background: linear-gradient(180deg, #f3f3fb 0%, #fdfbfd 100%);
+                background: linear-gradient(
+                    180deg,
+                    var(--color-background-start) 0%,
+                    var(--color-background-finish) 100%
+                );
             }
         `,
     ],

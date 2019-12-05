@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { MenuButtonComponent } from './components/menu-button/menu-button.component';
+
 import { CommonModule } from '@angular/common';
+import { SidebarTabComponent } from './components/sidebar-tab/sidebar-tab.component';
 
 @NgModule({
     imports: [CommonModule],
-    declarations: [MenuButtonComponent],
-    exports: [MenuButtonComponent],
+    declarations: [SidebarTabComponent],
+    exports: [SidebarTabComponent],
 })
 export class ControlsModule {}

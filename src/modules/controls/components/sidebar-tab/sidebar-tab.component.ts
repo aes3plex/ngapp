@@ -29,12 +29,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
             }
 
             .menu-button:hover {
-                color: var(--color-active);
+                color: var(--color-hover);
             }
 
             .indicator {
                 width: 0.3rem;
-                height: 100%;
+                height: 0;
                 border-radius: 0.3rem;
             }
 
@@ -44,15 +44,18 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
                         rgba(var(--color-indicator-shadow), 0.75),
                     0rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.55),
                     0.1rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.45);
+                height: 100%;
+                transition: height 0.2s ease-out;
             }
 
             .active .content {
                 color: var(--color-active);
+                transition: color 0.2s ease-out;
             }
         `,
     ],
 })
-export class MenuButtonComponent {
+export class SidebarTabComponent {
     @Input() public active: boolean;
 
     @Output() public onselect: EventEmitter<void> = new EventEmitter();

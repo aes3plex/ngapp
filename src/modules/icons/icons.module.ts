@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import { HomeIconComponent } from './components/home-icon/home-icon.component';
+import { NotesIconComponent } from './components/notes-icon/notes-icon.component';
+import { ProfileIconComponent } from './components/profile-icon/profile-icon.component';
 
 @NgModule({
     imports: [],
-    declarations: [HomeIconComponent],
-    exports: [HomeIconComponent],
+    declarations: [NotesIconComponent, ProfileIconComponent],
+    exports: [NotesIconComponent, ProfileIconComponent],
 })
 export class IconsModule {}

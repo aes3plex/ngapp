@@ -16,9 +16,18 @@ body {
 
     --color-white: #ffffff;
     --color-active: #2A8BF2;
+    --color-hover: rgba(110, 122, 157, 0.85);
     --color-base-grey: #707C97;
 
     --color-indicator-shadow: 42, 139, 242;
+
+    --color-background-start: #f3f3fb;
+    --color-background-finish: #fdfbfd;
+
+    --color-icon-start: #7CB8F7;
+    --color-icon-finish: #2A8BF2;
+
+
 }
 
 * {

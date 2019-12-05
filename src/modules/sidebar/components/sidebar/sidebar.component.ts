@@ -12,7 +12,7 @@ import { SidebarTab } from '../../enums/SidebarTab';
             >
                 <div class="tab-content">
                     <div class="icon-container">
-                        <app-home-icon></app-home-icon>
+                        <app-profile-icon [isActive]="activeTab === tab.PROFILE"></app-profile-icon>
                     </div>
                     <div class="text-container">PROFILE</div>
                 </div>
@@ -24,7 +24,7 @@ import { SidebarTab } from '../../enums/SidebarTab';
             >
                 <div class="tab-content">
                     <div class="icon-container">
-                        <app-home-icon></app-home-icon>
+                        <app-notes-icon [isActive]="activeTab === tab.NOTES"></app-notes-icon>
                     </div>
                     <div class="text-container">NOTES</div>
                 </div>
@@ -38,7 +38,11 @@ import { SidebarTab } from '../../enums/SidebarTab';
             }
 
             .sidebar {
+                display: grid;
+                grid-auto-flow: row;
+                grid-gap: 0.5rem;
                 background: var(--color-white);
+                padding: 2rem 0;
             }
 
             .tab-content {
@@ -46,8 +50,7 @@ import { SidebarTab } from '../../enums/SidebarTab';
                 grid-template-columns: auto 1fr;
                 grid-gap: 1.7rem;
                 align-items: center;
-                padding-left: 3.5rem;
-                padding-right: 3.5rem;
+                padding: 0 3.5rem;
             }
 
             .icon-container {
