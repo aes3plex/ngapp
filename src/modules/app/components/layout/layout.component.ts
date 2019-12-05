@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     template: `
         <div class="wrapper">
             <div class="grid">
-                <div class="menu"></div>
+                <app-sidebar-container></app-sidebar-container>
                 <div class="content"></div>
             </div>
         </div>
@@ -19,16 +19,16 @@ import { Component } from '@angular/core';
 
             .grid {
                 display: grid;
-                grid-template-columns: 1fr 4fr;
+                grid-template-columns: 29rem 1fr;
                 height: 100%;
             }
 
-            .menu {
-                background-color: rgb(45, 158, 144);
-            }
-
             .content {
-                background-color: rgba(34, 134, 120, 0.73);
+                background: linear-gradient(
+                    180deg,
+                    var(--color-background-start) 0%,
+                    var(--color-background-finish) 100%
+                );
             }
         `,
     ],

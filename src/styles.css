@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 html {
     font-size: 62.5%;
     height: 100%;
@@ -10,6 +11,56 @@ body {
     height: 100%;
 }
 
+.light {
+    font-family: 'TSE Sans', sans-serif !important;
+
+    --color-white: #ffffff;
+    --color-active: #2A8BF2;
+    --color-hover: rgba(110, 122, 157, 0.85);
+    --color-base-grey: #707C97;
+
+    --color-indicator-shadow: 42, 139, 242;
+
+    --color-background-start: #f3f3fb;
+    --color-background-finish: #fdfbfd;
+
+    --color-icon-start: #7CB8F7;
+    --color-icon-finish: #2A8BF2;
+
+
+}
+
 * {
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('assets/font/TTNorms-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('assets/font/TTNorms-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('assets/font/TTNorms-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('assets/font/TTNorms-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
