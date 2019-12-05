@@ -1,1 +1,5 @@
-export interface IAppState {}
+import { SidebarTab } from '../../sidebar/enums/SidebarTab';
+
+export interface IAppState {
+    activeSidebarTab: SidebarTab;
+}

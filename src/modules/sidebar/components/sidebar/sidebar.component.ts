@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
                     <div class="icon-container">
                         <app-home-icon></app-home-icon>
                     </div>
-                    <div class="text-container">HOME</div>
+                    <div class="text-container">PROFILE</div>
                 </div>
             </app-menu-button>
             <app-menu-button class="button" [active]="false">
@@ -17,7 +17,7 @@ import { Component } from '@angular/core';
                     <div class="icon-container">
                         <app-home-icon></app-home-icon>
                     </div>
-                    <div class="text-container">HOME</div>
+                    <div class="text-container">NOTES</div>
                 </div>
             </app-menu-button>
         </div>
