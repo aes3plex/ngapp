@@ -4,7 +4,9 @@ import { Component } from '@angular/core';
     selector: 'app-notes-layout',
     template: `
         <div class="grid">
-            <div></div>
+            <div>
+                <app-notes-entity></app-notes-entity>
+            </div>
             <div></div>
         </div>
     `,
