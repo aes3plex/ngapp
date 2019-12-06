@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     template: `
         <div class="wrapper">
             <div class="grid">
-                <app-sidebar-container></app-sidebar-container>
+                <app-sidebar-container class="sidebar"></app-sidebar-container>
                 <div class="content"></div>
             </div>
         </div>
@@ -29,6 +29,13 @@ import { Component } from '@angular/core';
                     var(--color-background-start) 0%,
                     var(--color-background-finish) 100%
                 );
+            }
+
+            .sidebar {
+                position: relative;
+                box-shadow: 2.4rem 0.6rem 5rem rgba(0, 0, 0, 0.02),
+                3.5rem 0 7rem rgba(86, 128, 248, 0.05),
+                0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
             }
         `,
     ],
