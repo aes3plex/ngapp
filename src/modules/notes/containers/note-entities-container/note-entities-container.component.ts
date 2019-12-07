@@ -15,14 +15,7 @@ import { getNotesList } from '../../selectors/getNotesList';
             ></app-notes-entity>
         </ng-container>
     `,
-    styles: [
-        `
-            :host {
-                display: block;
-                overflow: overlay;
-            }
-        `,
-    ],
+    styles: [],
 })
 export class NoteEntitiesContainerComponent {
     public notes$: Observable<INote[]>;

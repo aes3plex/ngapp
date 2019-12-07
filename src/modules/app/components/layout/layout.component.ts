@@ -23,6 +23,9 @@ import { SidebarTab } from '../../../sidebar/enums/SidebarTab';
             }
 
             .content {
+                padding: 11rem 6rem 4rem;
+                height: 100%;
+                overflow: auto;
                 background: linear-gradient(
                     180deg,
                     var(--color-background-start) 0%,
