@@ -16,4 +16,5 @@ export const initialState: IAppState = {
             content: 'Note content',
         },
     ],
+    activeNoteId: null,
 };

@@ -3,9 +3,9 @@ import { Component, Input } from '@angular/core';
 @Component({
     selector: 'app-notes-entity',
     template: `
-        <div class="grid">
-            <div class="title">title</div>
-            <div class="content">content</div>
+        <div class="grid" [class.active]="isActive">
+            <div class="title" [class.active-text]="isActive">title</div>
+            <div class="content" [class.active-text]="isActive">content</div>
         </div>
     `,
     styles: [
@@ -18,6 +18,7 @@ import { Component, Input } from '@angular/core';
                 height: 20rem;
                 background: var(--color-white);
                 border-radius: 6px;
+                cursor: pointer;
             }
 
             .title {
@@ -35,10 +36,23 @@ import { Component, Input } from '@angular/core';
                 text-overflow: ellipsis;
                 text-align: justify;
             }
+
+            .active-text {
+                color: var(--color-white);
+            }
+
+            .active {
+                background: linear-gradient(
+                    110deg,
+                    var(--color-active-start) 0%,
+                    var(--color-active-finish) 100%
+                );
+            }
         `,
     ],
 })
 export class NoteEntityComponent {
     @Input() public title: string;
     @Input() public content: string;
+    @Input() public isActive: boolean;
 }
