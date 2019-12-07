@@ -8,14 +8,30 @@ import { getNotesList } from '../../selectors/getNotesList';
 @Component({
     selector: 'app-note-entities-container',
     template: `
-        <ng-container *ngFor="let note of notes$ | async">
-            <app-notes-entity
-                [title]="note.title"
-                [content]="note.content"
-            ></app-notes-entity>
-        </ng-container>
+        <div class="notes">
+            <ng-container *ngFor="let note of notes$ | async">
+                <app-notes-entity
+                    [title]="note.title"
+                    [content]="note.content"
+                ></app-notes-entity>
+            </ng-container>
+        </div>
     `,
-    styles: [],
+    styles: [
+        `
+            :host {
+                height: 100%;
+                overflow: auto;
+            }
+
+            .notes {
+                display: grid;
+                grid-auto-flow: row;
+                grid-gap: 2rem;
+                align-content: start;
+            }
+        `,
+    ],
 })
 export class NoteEntitiesContainerComponent {
     public notes$: Observable<INote[]>;

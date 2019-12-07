@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
     template: `
         <div class="grid">
             <div class="notes">
-                <div class="notes-header">Notes</div>
-                <app-note-entities-container class="notes-entities"></app-note-entities-container>
+                <app-notes-header></app-notes-header>
+                <app-note-entities-container></app-note-entities-container>
             </div>
             <div class="text-editor">
                 <textarea class="text-area"></textarea>
@@ -22,15 +22,6 @@ import { Component } from '@angular/core';
                 height: 100%;
             }
 
-            .notes-entities {
-                display: grid;
-                grid-auto-flow: row;
-                grid-gap: 2rem;
-                height: 100%;
-                overflow: auto;
-                align-content: start;
-            }
-
             .text-editor {
             }
 
@@ -41,14 +32,10 @@ import { Component } from '@angular/core';
 
             .notes {
                 display: grid;
-                grid-template-rows: auto 1fr ;
+                grid-template-rows: auto 1fr;
                 grid-gap: 3rem;
                 height: 100%;
                 overflow: hidden;
-            }
-
-            .notes-header {
-                font-size: 3.6rem;
             }
         `,
     ],
