@@ -4,25 +4,18 @@ import { SidebarTab } from '../../../sidebar/enums/SidebarTab';
 @Component({
     selector: 'app-layout',
     template: `
-        <div class="wrapper">
-            <div class="grid">
-                <app-sidebar-container class="sidebar"></app-sidebar-container>
-                <div class="content">
-                    <app-notes-layout
-                        *ngIf="activeTab === tab.NOTES"
-                    ></app-notes-layout>
-                    <div *ngIf="activeTab !== tab.NOTES"></div>
-                </div>
+        <div class="grid">
+            <app-sidebar-container class="sidebar"></app-sidebar-container>
+            <div class="content">
+                <app-notes-layout
+                    *ngIf="activeTab === tab.NOTES"
+                ></app-notes-layout>
+                <div *ngIf="activeTab !== tab.NOTES"></div>
             </div>
         </div>
     `,
     styles: [
         `
-            .wrapper {
-                height: 100%;
-                overflow: hidden;
-            }
-
             .grid {
                 display: grid;
                 grid-template-columns: 29rem 1fr;

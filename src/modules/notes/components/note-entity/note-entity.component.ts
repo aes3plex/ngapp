@@ -21,7 +21,7 @@ import { Component, Input } from '@angular/core';
             }
 
             .title {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 font-weight: 600;
                 overflow: hidden;
                 text-overflow: ellipsis;

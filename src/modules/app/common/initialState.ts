@@ -7,6 +7,16 @@ export const initialState: IAppState = {
     notes: [
         {
             id: new IdGeneratorService().getID(),
+            title: 'Title1',
+            content: 'Note content',
+        },
+        {
+            id: new IdGeneratorService().getID(),
+            title: 'Title2',
+            content: 'Note content',
+        },
+        {
+            id: new IdGeneratorService().getID(),
             title: 'Note title',
             content: 'Note content',
         },

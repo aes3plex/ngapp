@@ -4,10 +4,8 @@ import { Component } from '@angular/core';
     selector: 'app-notes-layout',
     template: `
         <div class="grid">
-            <div>
-                <app-notes-entity></app-notes-entity>
-            </div>
-            <div></div>
+            <app-note-entities-container class="notes"></app-note-entities-container>
+            <div class="text-editor"></div>
         </div>
     `,
     styles: [
@@ -18,6 +16,15 @@ import { Component } from '@angular/core';
                 grid-gap: 8rem;
                 padding: 11rem 6rem 4rem;
                 height: 100%;
+            }
+
+            .notes {
+                display: grid;
+                grid-auto-flow: row;
+                grid-gap: 2rem;
+            }
+            
+            .text-editor {
             }
         `,
     ],
