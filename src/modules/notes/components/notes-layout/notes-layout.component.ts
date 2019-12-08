@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
                 <app-notes-header></app-notes-header>
                 <app-note-entities-container></app-note-entities-container>
             </div>
-            <div class="text-editor">
-                <textarea class="text-area"></textarea>
-            </div>
+            <app-note-editor-container></app-note-editor-container>
         </div>
     `,
     styles: [
@@ -19,14 +17,6 @@ import { Component } from '@angular/core';
                 display: grid;
                 grid-template-columns: 50rem 1fr;
                 grid-gap: 6rem;
-                height: 100%;
-            }
-
-            .text-editor {
-            }
-
-            .text-area {
-                width: 100%;
                 height: 100%;
             }
 

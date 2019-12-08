@@ -4,8 +4,10 @@ import { Component, Input } from '@angular/core';
     selector: 'app-notes-entity',
     template: `
         <div class="grid" [class.active]="isActive">
-            <div class="title" [class.active-text]="isActive">title</div>
-            <div class="content" [class.active-text]="isActive">content</div>
+            <div class="title" [class.active-text]="isActive">{{ title }}</div>
+            <div class="content" [class.active-text]="isActive">
+                {{ content }}
+            </div>
         </div>
     `,
     styles: [
@@ -15,9 +17,9 @@ import { Component, Input } from '@angular/core';
                 grid-template-rows: auto 1fr;
                 grid-gap: 1.6rem;
                 padding: 4rem;
-                height: 20rem;
+                height: 19rem;
                 background: var(--color-white);
-                border-radius: 6px;
+                border-radius: 0.6rem;
                 cursor: pointer;
             }
 
@@ -30,7 +32,7 @@ import { Component, Input } from '@angular/core';
 
             .content {
                 font-size: 1.6rem;
-                line-height: 2.6rem;
+                line-height: 2.4rem;
                 color: var(--color-base-grey);
                 overflow: hidden;
                 text-overflow: ellipsis;
