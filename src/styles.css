@@ -15,7 +15,8 @@ body {
     font-family: 'TSE Sans', sans-serif !important;
 
     --color-white: #ffffff;
-    --color-active: #2A8BF2;
+    --color-black: #000000;
+
     --color-hover: rgba(110, 122, 157, 0.85);
     --color-base-grey: #707C97;
 
@@ -24,8 +25,8 @@ body {
     --color-background-start: #f3f3fb;
     --color-background-finish: #fdfbfd;
 
-    --color-icon-start: #7CB8F7;
-    --color-icon-finish: #2A8BF2;
+    --color-active-start: #7CB8F7;
+    --color-active-finish: #2A8BF2;
 
 
 }

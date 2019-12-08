@@ -39,17 +39,16 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
             }
 
             .active .indicator {
-                background-color: var(--color-active);
-                box-shadow: 0.4rem 0rem 2.5rem
-                        rgba(var(--color-indicator-shadow), 0.75),
-                    0rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.55),
-                    0.1rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.45);
+                background-color: var(--color-active-finish);
+                box-shadow: 0.4rem 0rem 2.5rem rgba(var(--color-indicator-shadow), 0.75),
+                0rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.55),
+                0.1rem 0rem 1rem rgba(var(--color-indicator-shadow), 0.45);
                 height: 100%;
                 transition: height 0.2s ease-out;
             }
 
             .active .content {
-                color: var(--color-active);
+                color: var(--color-active-finish);
                 transition: color 0.2s ease-out;
             }
         `,

@@ -11,8 +11,8 @@ import { Component, Input } from '@angular/core';
             xmlns="http://www.w3.org/2000/svg"
         >
             <linearGradient id="linear-gradient">
-                <stop offset="0%" stop-color="var(--color-icon-start)" />
-                <stop offset="100%" stop-color="var(--color-icon-finish)" />
+                <stop offset="0%" stop-color="var(--color-active-start)" />
+                <stop offset="100%" stop-color="var(--color-active-finish)" />
             </linearGradient>
 
             <path
